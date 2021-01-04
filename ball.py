@@ -6,11 +6,11 @@ class Ball(Turtle):
     def __init__(self):
         super().__init__()
         self.shape("circle")
-        self.color("white")
         self.penup()
         self.x_move = 10
         self.y_move = 10
         self.move_speed = 0.1
+        self.color("white")
 
     def move(self):
         new_x = self.xcor() + self.x_move
